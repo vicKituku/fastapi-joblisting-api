@@ -2,9 +2,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-URL_DATABASE = 'postgresql://postgres:qazqaz123@localhost:5432/jobs'
+URL_DATABASE = 'sqlite:///./sql_app.db'
 
-engine = create_engine(URL_DATABASE)
+engine = create_engine(URL_DATABASE, connect_args={"check_same_thread": False})
 
 SessionLocal= sessionmaker(autocommit=False, autoflush=True, bind=engine)
 
