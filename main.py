@@ -10,7 +10,7 @@ app = FastAPI()
 models.Base.metadata.create_all(bind=engine)
 
 origins = [
-    'https://react-tailwindcss-job-listing-website.vercel.app/',
+    'https://react-tailwindcss-job-listing-website.vercel.app',
 ]
 
 app.add_middleware(
