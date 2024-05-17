@@ -94,5 +94,9 @@ async def delete_job(id:str, db: db_dependency):
     db.delete(job)
     db.commit()
     return job
+
+@app.get("healthcheck")
+def healthcheck():
+    return {"status": "ok"}
     
   
