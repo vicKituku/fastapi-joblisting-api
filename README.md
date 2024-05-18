@@ -1,15 +1,8 @@
 # Job Listing FastAPI Application
 
+Live Demo [Link 🔗](https://fastapi-joblisting-api.onrender.com/docs)
+
 Welcome to the Job Listing FastAPI Application! This repository contains a simple API built with FastAPI that allows users to manage job listings. The API supports adding, retrieving, updating, and deleting job entries.
-
-## Table of Contents
-
-Features
-Installation
-Usage
-API Endpoints
-Contributing
-License
 
 ## Features
 
